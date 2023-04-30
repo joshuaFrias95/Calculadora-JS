@@ -6,7 +6,7 @@
         text-align: center;
         letter-spacing: 2px;
         font-size: 1.6em;
-        color: $black;
+        color: $white;
         cursor: default;
         margin-bottom: 2%;
     }
@@ -14,7 +14,7 @@
 
 .calc-display {
     p {
-        margin: 1%;
+        margin: 3%;
         padding-right: 3%;
         text-align: right;
         font-size: 1.7em;
@@ -24,15 +24,12 @@
 
 .buttons-row {
 
-    button {
-        text-align: center;
+    .fa-solid {
+        color: $white;
+        font-size: 0.8em;
     }
 
-    .borrar {
-        font-size: 1.5em;
-    }
-
-    .symbols {
-        font-weight: bolder;
-    }
+    .fa-circle {
+        font-size: 0.2em;
+    }    
 }

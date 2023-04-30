@@ -26,16 +26,16 @@
     height: 90%;
     padding: 2%;
     border-radius: 10px;
-    gap: 5%;
-    border-radius: 65px;
-    background: #e0e0e0;
-    box-shadow:  -37px -37px 74px #afafaf, 37px 37px 74px #ffffff;
+    border-radius: 39px;
+    background: linear-gradient(225deg, #268d81, #2da899);
+    box-shadow:  -30px 30px 60px #228175,
+             30px -30px 60px #32b9a9;
 }
 
 .calc-display {
-    outline: 1px solid $black;
+    outline: 5px solid $white;
     border-radius: 50px;
-    margin: 3% 0;
+    margin-top: 4%;
 }
 
 .calc-buttons {
@@ -43,10 +43,11 @@
     align-items: center;
     gap: 3%;
     border-radius: 30px;
-    padding: 3%;
+    padding: 2%;
 }
 
 .buttons-row {
     justify-content: space-around;
 }
+
 
