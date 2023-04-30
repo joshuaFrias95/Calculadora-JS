@@ -5,8 +5,10 @@
     h1 {
         text-align: center;
         letter-spacing: 2px;
+        font-size: 1.6em;
         color: $black;
         cursor: default;
+        margin-bottom: 2%;
     }
 }
 
@@ -20,3 +22,17 @@
     }
 }
 
+.buttons-row {
+
+    button {
+        text-align: center;
+    }
+
+    .borrar {
+        font-size: 1.5em;
+    }
+
+    .symbols {
+        font-weight: bolder;
+    }
+}

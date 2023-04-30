@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
 }
+*:focus {
+  outline: none;
+}
 
 body {
   width: 100%;
@@ -13,11 +16,7 @@ body {
   background-color: #e7e4e4;
 }
 
-button {
-  font-size: 2em;
-}
-
-.container, .calc-buttons {
+.container, .calc-buttons, .buttons-row {
   width: 100%;
 }
 
@@ -25,7 +24,7 @@ button {
   height: 100%;
 }
 
-.container, .calc-body, .calc-top, .calc-buttons, .buttons-top {
+.container, .calc-body, .calc-top, .calc-buttons, .buttons-top, .buttons-row {
   display: flex;
 }
 
@@ -39,8 +38,8 @@ button {
 }
 
 .calc-body {
+  width: 35%;
   height: 90%;
-  width: 45%;
   padding: 2%;
   border-radius: 10px;
   gap: 5%;
@@ -58,16 +57,22 @@ button {
 .calc-buttons {
   justify-content: center;
   align-items: center;
-  gap: 5%;
+  gap: 3%;
   border-radius: 30px;
   padding: 3%;
+}
+
+.buttons-row {
+  justify-content: space-around;
 }
 
 .calc-title h1 {
   text-align: center;
   letter-spacing: 2px;
+  font-size: 1.6em;
   color: #161616;
   cursor: default;
+  margin-bottom: 2%;
 }
 
 .calc-display p {
@@ -76,6 +81,28 @@ button {
   text-align: right;
   font-size: 1.7em;
   font-weight: 600;
+}
+
+.buttons-row button {
+  text-align: center;
+}
+.buttons-row .borrar {
+  font-size: 1.5em;
+}
+.buttons-row .symbols {
+  font-weight: bolder;
+}
+
+button {
+  font-size: 2.5em;
+  border-radius: 50%;
+  border: none;
+  padding: 1.5% 4.5%;
+  transition: all 0.3s ease;
+}
+
+.buttons-row .symbols {
+  padding: 2% 8%;
 }
 
 /*# sourceMappingURL=styles.css.map */

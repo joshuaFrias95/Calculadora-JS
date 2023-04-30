@@ -1,6 +1,6 @@
 @import "colors";
 
-.container, .calc-buttons {
+.container, .calc-buttons, .buttons-row {
     width: 100%;
 }
 
@@ -8,7 +8,7 @@
      height: 100%;
 }
 
-.container,.calc-body, .calc-top, .calc-buttons, .buttons-top {
+.container,.calc-body, .calc-top, .calc-buttons, .buttons-top, .buttons-row {
     display: flex;
 }
 
@@ -22,8 +22,8 @@
 }
 
 .calc-body {
+    width: 35%;
     height: 90%;
-    width: 45%;
     padding: 2%;
     border-radius: 10px;
     gap: 5%;
@@ -41,8 +41,12 @@
 .calc-buttons {
     justify-content: center;
     align-items: center;
-    gap: 5%;
+    gap: 3%;
     border-radius: 30px;
     padding: 3%;
+}
+
+.buttons-row {
+    justify-content: space-around;
 }
 
